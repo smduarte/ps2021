@@ -1,9 +1,9 @@
 # Stream Processing 2021
 ## Lab #1
+### Preparing the environment
 
 ---
 
-### Preparing the environment
 ## Docker
 
 We will use [Docker](http://www.docker.com) to virtualize the execution environment of the tool we will use.
@@ -39,6 +39,7 @@ If you ran the jupyter container before creating the `notebooks` directory, crea
 Otherwise, any changes you make will be lost.
 
 ---
+## Exercise
 
 ### 5) Spark streaming example.
 
