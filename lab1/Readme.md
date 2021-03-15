@@ -30,6 +30,6 @@ Otherwise, any changes you make will be lost.
 
 ### 5) Spark streaming example.
 
-A notebook with a simple Spark Streaming exercise is found [here](lab1/SparkStreaming_Web_Log_example.ipynb).
+A notebook with a simple Spark Streaming exercise is found [here](SparkStreaming_Web_Log_example.ipynb).
 You can either download and place the file in your `notebooks` directory, or
 use the *UPLOAD* button available in jupyter.
