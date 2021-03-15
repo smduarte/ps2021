@@ -17,6 +17,12 @@ Docker is available for Windows, Linux and macOS.
 Download and install Docker for your platform [here](https://www.docker.com/get-started).
 
 ---
+### 2) Test Docker
+
+Confirm that Docker is properly installed by executing
+in a terminal:
+
+`docker run -ti hello-world`
 
 ### 3) Create the bridge network
 The bridge network will enable routing among the
