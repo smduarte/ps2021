@@ -11,4 +11,4 @@ fi
 
 docker pull smduarte/ps2021-tp1-publisher
 
-docker run --rm --name=publisher --network=psnet -v "$(pwd)/logs":/debs smduarte/ps2021-tp1-publisher 
+docker run --rm --name=publisher --network=psnet -v "$(pwd)/logs":/debs smduarte/ps2021-tp1-publisher $TIME
