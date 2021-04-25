@@ -13,4 +13,4 @@ echo "Starting Kafka..."
 echo "Waiting for 10 secs until kafka and zookeeper services are up and running"
 sleep 10
 
-java -cp /tmp/PS2021-Debs-Publisher.jar debs.Publisher $*
+nohup java -cp  /tmp/PS21-Debs-Publisher.jar debs.Publisher $* &>/tmp/debs.log &
