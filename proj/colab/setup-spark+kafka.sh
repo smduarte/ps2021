@@ -33,4 +33,5 @@ echo "Downloading Kafka..."
 wget -q -O  /tmp/kafka.tgz https://downloads.apache.org/kafka/2.7.0/$KAFKA.tgz
 echo "Unpacking Kafka..."
 tar -xzf /tmp/kafka.tgz
+wget -q -O /tmp/PS2021-Debs-Publisher.jar $REPO/PS2021-Kafka-1.2021.jar	
 echo "Done"
