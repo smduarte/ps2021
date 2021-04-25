@@ -6,7 +6,7 @@ KAFKA=kafka_2.12-2.7.0
 export SPARK_HOME=/content/$SPARK-bin-hadoop2.7
 
 echo "Downloading Spark..."
-wget -O /tmp/spark.tgz https://www-us.apache.org/dist/spark/$SPARK/$SPARK-bin-hadoop2.7.tgz
+wget -q -O /tmp/spark.tgz https://www-us.apache.org/dist/spark/$SPARK/$SPARK-bin-hadoop2.7.tgz
 echo "Unpacking Spark..."
 tar xf /tmp/spark.tgz
 pip install -q findspark
