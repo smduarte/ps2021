@@ -10,7 +10,7 @@ echo "Unpacking Spark..."
 tar xf /tmp/spark.tgz
 pip install -q findspark
 
-REPO=https://github.com/smduarte/ps2021/raw/master/proj/colab/
+REPO=https://github.com/smduarte/ps2021/raw/master/proj/colab
 
 JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-10-assembly_2.11-$SPARK_VERSION.jar \
@@ -33,5 +33,5 @@ echo "Downloading Kafka..."
 wget -q -O  /tmp/kafka.tgz https://downloads.apache.org/kafka/2.7.0/$KAFKA.tgz
 echo "Unpacking Kafka..."
 tar -xzf /tmp/kafka.tgz
-wget -O - $REPO/PS2021-Kafka-1.2021.jar.gz | gunzip -c > /tmp/PS2021-Debs-Publisher.jar
+wget -q -O - $REPO/PS2021-Kafka-1.2021.jar.gz | gunzip -c > /tmp/PS2021-Debs-Publisher.jar
 echo "Done"
