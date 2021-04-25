@@ -1,5 +1,7 @@
 #!/bin/bash
 
+KAFKA=kafka_2.12-2.7.0
+
 echo "Downloading Kafka..."
 wget -q -O  /tmp/kafka.tgz https://downloads.apache.org/kafka/2.7.0/$KAFKA.tgz
 tar -xzf /tmp/kafka.tgz

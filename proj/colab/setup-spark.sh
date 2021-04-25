@@ -2,7 +2,6 @@
 
 SPARK_VERSION=2.4.7
 SPARK=spark-$SPARK_VERSION
-KAFKA=kafka_2.12-2.7.0
 export SPARK_HOME=/content/$SPARK-bin-hadoop2.7
 
 echo "Downloading Spark..."
