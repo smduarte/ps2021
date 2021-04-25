@@ -19,7 +19,7 @@ JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
 
-for jar in "${JARS_KAFKA0[@]}"
+for jar in "${JARS_KAFKA[@]}"
 do
   echo "Downloading ${jar}..."
   wget -q -O - $REPO/$jar.gz | gunzip -c > $SPARK_HOME/jars/$jar
