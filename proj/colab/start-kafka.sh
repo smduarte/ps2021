@@ -1,4 +1,5 @@
 #!/bin/bash
+echo $*
 
 KAFKA=kafka_2.12-2.7.0
 
@@ -12,4 +13,4 @@ echo "Starting Kafka..."
 echo "Waiting for 10 secs until kafka and zookeeper services are up and running"
 sleep 10
 
-
+java -cp /tmp/PS2021-Debs-Publisher.jar debs.Publisher $*
