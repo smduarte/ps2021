@@ -17,8 +17,7 @@ JARS_KAFKA010=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-10-assembly_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-10_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
-               spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar \ 
-               )
+               spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
 
 for jar in "${JARS_KAFKA010[@]}"
 do
