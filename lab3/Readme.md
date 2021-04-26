@@ -10,4 +10,10 @@
 
 Use @campus.fct.unl.pt account to mount google drive.
 
+Atualizar a imagem:
+
+`docker pull smduarte/ps2021-jupyterlab`
+
+Correr a imagem:
+
 `docker run --network psnet -p 8888:8888 -p 8080:8080 smduarte/ps2021-jupyterlab`
