@@ -1,7 +1,8 @@
 # Lab 5 Apache Flink
 
-This lab exemplifies a Flink exampling using a Kafka source.
+This lab exemplifies how to use Flink with a Kafka source.
 
+### Execution Guide
 To run this example, you need to do the following:
 
 1. Start Kafka, using the provided script.
