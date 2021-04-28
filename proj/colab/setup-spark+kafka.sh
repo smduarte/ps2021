@@ -30,8 +30,6 @@ do
   wget -q -O - $REPO/$jar.gz | gunzip -c > $SPARK_HOME/jars/$jar
 done
 
-mv jars/*kafka*10*.jar $SPARK_HOME/jars/
-mv jars/*kafka*8_2*.jar $SPARK_HOME/jars/
 echo "Done"
 #!/bin/bash
 
