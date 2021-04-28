@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SPARK_VERSION=2.4.7
+SPARK_VERSION=3.1.1
 SPARK=spark-$SPARK_VERSION
 export SPARK_HOME=/content/$SPARK-bin-hadoop2.7
 
@@ -12,11 +12,15 @@ pip install -q findspark
 
 REPO=https://github.com/smduarte/ps2021/raw/master/proj/colab/
 
-JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
-               spark-streaming-kafka-0-10-assembly_2.11-$SPARK_VERSION.jar \
-               spark-streaming-kafka-0-10_2.11-$SPARK_VERSION.jar \
-               spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
+JARS_KAFKA=(spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
+
+#JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
+#               spark-streaming-kafka-0-10-assembly_2.11-$SPARK_VERSION.jar \
+#               spark-streaming-kafka-0-10_2.11-$SPARK_VERSION.jar \
+#               spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
+#               spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
+
 
 for jar in "${JARS_KAFKA[@]}"
 do
