@@ -27,7 +27,7 @@ do
 done
 
 mv jars/*kafka*10*.jar $SPARK_HOME/jars/
-
+mv jars/*kafka*8_2*.jar $SPARK_HOME/jars/
 echo "Done"
 #!/bin/bash
 
