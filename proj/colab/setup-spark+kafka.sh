@@ -1,9 +1,9 @@
 #!/bin/bash
 
 rm -rf sample_data
-apt-get update && apt-get install -y openjdk-8-jdk-headless 2> /dev/null
+apt-get update && apt-get install -y openjdk-8-jdk-headless > /dev/null 2> /dev/null
 
-update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64 2> /dev/null
+update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64 > /dev/null 2> /dev/null
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 SPARK_VERSION=2.4.7
