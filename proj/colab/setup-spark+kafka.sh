@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf sample_data
+
 SPARK_VERSION=2.4.7
 SPARK=spark-$SPARK_VERSION
 export SPARK_HOME=/content/$SPARK-bin-hadoop2.7
