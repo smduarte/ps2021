@@ -19,14 +19,12 @@ JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
                spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
 
 
+mkdir -p jars
 for jar in "${JARS_KAFKA[@]}"
 do
   echo "Downloading ${jar}..."
-  wget -q -O - $REPO/$jar.gz | gunzip -c > $SPARK_HOME/jars/$jar
+  wget -q -O - $REPO/$jar.gz | gunzip -c > jars/$jar
 done
-
-mkdir -p jars080
-mv $SPARK_HOME/jars/*kafka*8*assembly*.jar jars080/
 
 echo "Done"
 #!/bin/bash
